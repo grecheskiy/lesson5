@@ -9,6 +9,7 @@ Console.Write($"{arr[i]} ");}
 Console.WriteLine(); 
 int c = arr.Length;
 int[] copy = new int[c];
-for (int j=0; j<c; j++) 
-{copy[j] = arr[j];}
+//for (int j=0; j<c; j++) 
+//{copy[j] = arr[j];}
+arr.CopyTo(copy, 0);
 Console.WriteLine(String.Join(" ", copy));
